@@ -1,0 +1,14 @@
+<aura:component>
+
+    <aura:attribute name="timesheets" type="List"/>
+
+    <aura:if isTrue="{!v.timesheets.length > 0}">
+        <aura:iteration items="{!v.timesheets}" var="timesheet">
+            <div>
+                <!-- no v. because timesheet isn't a global attribute -->
+                {!timesheet.Name}
+            </div>
+        </aura:iteration>
+    </aura:if>
+
+</aura:component>	

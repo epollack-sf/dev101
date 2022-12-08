@@ -1,0 +1,13 @@
+<!-- sldsValidatorIgnore -->
+<template>
+
+    <c-approve-or-reject-timesheet-table timesheets={timesheets}
+                                            button-variant={buttonVariant}
+                                            onrejecttimesheets={handleTimesheetsRejected}
+                                            onapprovetimesheets={handleTimesheetsApproved}>
+    </c-approve-or-reject-timesheet-table>
+
+    <c-create-new-timesheet-button project-id={recordId}></c-create-new-timesheet-button>
+    
+    
+</template>

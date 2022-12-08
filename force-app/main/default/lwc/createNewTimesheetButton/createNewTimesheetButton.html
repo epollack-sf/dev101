@@ -1,0 +1,13 @@
+<template>
+    <lightning-button label="Create New Timesheet" onclick={toggleForm}></lightning-button>
+
+    <c-modal>
+        <lightning-record-edit-form object-api-name="Timesheet__c">
+            <lightning-input-field field-name="Employee__c"></lightning-input-field>
+            <lightning-input-field field-name="Total_Hours__c"></lightning-input-field>
+            <lightning-input-field field-name="Project__c" value={projectId}></lightning-input-field>
+            
+            <lightning-button label="Create Timesheet" type="submit"></lightning-button>
+        </lightning-record-edit-form>                          
+    </c-modal>
+</template>
